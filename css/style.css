@@ -16,6 +16,13 @@
   --border: rgba(255, 255, 255, 0.08);
 }
 
+
+section {
+  padding: 80px 20px;
+  margin-bottom: 40px;
+}
+
+
 /* RESET */
 * {
   margin: 0;
