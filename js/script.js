@@ -19,16 +19,21 @@ document.getElementById("theme-toggle").onclick = function(){
   document.body.classList.toggle("dark");
 };
 
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function(e) {
+  anchor.addEventListener("click", function (e) {
     e.preventDefault();
 
-    document.querySelector(this.getAttribute("href"))
-      .scrollIntoView({
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      target.scrollIntoView({
         behavior: "smooth"
       });
+    }
   });
 });
+
+
 
 const progresses = document.querySelectorAll(".progress");
 
