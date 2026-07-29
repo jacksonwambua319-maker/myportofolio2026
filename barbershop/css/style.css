@@ -769,7 +769,7 @@ footer h4 {
   RESPONSIVE - TABLETS
 ====================================*/
 
-@media (max-width: 992px) {
+@media (max-width: 800px) {
   .about-content,
   .contact-grid {
     grid-template-columns: 1fr;
@@ -781,6 +781,10 @@ footer h4 {
 
   .nav-links {
     background: var(--light);
+  }
+
+  .nav-links a:hover {
+    color: #e7a222;
   }
 }
 
@@ -808,6 +812,10 @@ footer h4 {
 
   .nav-links.active {
     display: flex;
+  }
+
+  .nav-links a:hover {
+    color: #e7a222;
   }
 
   .hero {
@@ -853,5 +861,13 @@ footer h4 {
     width: 55px;
     height: 55px;
     font-size: 1.7rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a:hover {
+    color: #e7a222;
   }
 }
